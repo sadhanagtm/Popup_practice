@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <form name="myemail" action="/action.php" onsubmit="return validation()" Method="post">
+    Name:
+    <input type="text" name="fname"/>
+    Email:
+    <input type="text" name="femail"/>
+    <input type="submit" value="submit"/>
+
+</form>
+
+    <script>
+        function validation(){
+            let x=document.femail["myemail"].value;
+            if(x===""){
+                alert("Email must be filled out");
+                return false;
+            
+            }
+            if (/^\w+([\.-]?\w+)*@\w+([.-]?\w+)(\.\w{2,3})+$/.test(myForm.email.value))
+            {
+                return (true)
+            }
+            alert("You have entered an invalid email address")
+            return (false)
+            }
+        
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<body>
+    <p id="data"> This is the first paragraph</p>
+    <p>This is the second paragraph</p>
+    <p>This is the thirds paragraph</p>
+    <button> Click me</button>
+    <script>
+        // $('p').click()
+        // $('p').click(function () {
+        //     console.log("You clicked on paragraph");//to display this on console
+        //     $(this).hide();  //to hide the touvhed contents
+
+        // });
+        //
+        // $(document).ready(function(){            //its syntax
+        // $("button").click(function ()           //to hide paragraph when clicking button
+        // {
+        //     $('p').hide();
+        // });
+        // });
+        // id selector
+        // $document.ready(function () {           //syntax
+            $("button").click(function () {
+                $("#data").hide();
+            
+            });
+        // });
+    </script>
+</body>
+
+</html>

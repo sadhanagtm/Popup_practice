@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    NAME:<input type="text" name="name" id="name">
+    PLACE:<input type="text" name="name" id="place">
+    NUMBER:<input type="number" name="name" id="number">
+    
+    <button onclick="myFunction()">wish</button>
+    <div class="wish"></div>
+    <div class="wish"></div>
+    <div class="wish"></div>
+
+
+
+
+    <script>
+        function myFunction() {
+            var name = document.getElementById('name').value;
+            var string = "hello " + name;
+            document.getElementsByClassName('wish')[0].innerHTML = string;
+            alert(string);
+        }
+
+    </script>
+
+
+
+
+
+    <!-- <script>
+        let i=1;
+       
+           do{ document.write("<br>"+i)
+            i++;
+           }
+           while(i<=100);
+        
+        
+
+     </script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Form action="add.php" method="POST">
+        Name
+        <input type="text" placeholder="Enter your name" name="name"/>
+        Email
+        <input type="text" placeholder="Enter Email" name="email"/>
+        Password
+        <input type="text" placeholder="Enter Password" name="pass"/>
+        <button>Submit</button>
+    </Form>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{ 
+            color: gray;
+
+            height: 300px;
+            width: 300px;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid gray;
+            padding: 10px;
+            background-color: rgb(223, 217, 217);
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        input{
+            height: 20px;
+            width: 250px;
+        }
+        button{}
+    </style>
+</body>
+</html>

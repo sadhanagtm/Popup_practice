@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    form{
+        display: flex;
+        flex-direction: column;
+        gap:24px;
+        height: fit-content;
+        width: 400px;
+        padding: 24px;
+        background-color: aquamarine;
+
+    }
+    body{
+        display: flex;
+        margin-top: 80px;
+        /* align-items: center; */
+        justify-content: center;
+        background-color: rgb(15, 110, 78);
+    }
+    label{
+        font-size: larger;
+        color: rgb(83, 82, 82);
+    }
+    input{
+        height: 25px;
+
+    }
+    button{
+        height: 25px;
+        width: 100px;
+        background-color: rgb(15, 110, 78);
+        border-radius: 1px;
+        border: 1px solid gray;
+        padding: 20px;
+         margin-left: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+    }
+    
+    </style>
+    
+    <Form name="myform" action="/action.php" onsubmit="return validation()" Method="post">
+        <label>Id</label>
+        <input placeholder="Enter your id"/>
+        <label>Name</label>
+        <input placeholder="Enter your name"/>
+        <label >Email</label>
+        <input class="femail" placeholder="Enter your email address"/>
+        <label>Salary</label>
+        <input placeholder="Enter salary"/>
+        <button> Submit</button>
+    </Form>
+    <script>
+        function validation(){
+            let x=document.femail["myform"].value;
+            if(x===""){
+                alert("Email must be filled out");
+                return false;
+            
+            }
+            if (/^\w+([\.-]?\w+)*@\w+([.-]?\w+)(\.\w{2,3})+$/.test(myForm.femail.value))
+            {
+                return (true)
+            }
+            alert("You have entered an invalid email address")
+            return (false)
+            }
+            if (x===" "){
+                alert(" Name is compulsory")
+                return false;
+            }
+            if(x.length<4){
+                alert("Name must contain more digits")
+            }
+        
+    </script>
+</body>
+</html>
